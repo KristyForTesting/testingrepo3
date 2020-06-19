@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="6d03c4bf-3e26-437b-8dad-a4462826047e" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 8" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="6d03c4bf-3e26-437b-8dad-a4462826047efileName">TestCase-8</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="CreateAndWaitForRemoveFile" name="Create File" id="f8e26745-2f1d-4f2c-8afb-55bb7a250e64">
+    <con:settings/>
+    <con:config>
+      <FileName>Test</FileName>
+      <FileContent>Test</FileContent>
+      <FolderPath>${projectDir}\Test</FolderPath>
+      <Timeout>0</Timeout>
+      <WaitForFileRemove>false</WaitForFileRemove>
+      <OverwriteExisting>false</OverwriteExisting>
+      <FileEncoding>Unicode</FileEncoding>
+      <Precision>seconds</Precision>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

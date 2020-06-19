@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/WCFREST/Service.svc/ConStroka" method="GET" resourcePath="/WCFREST/Service.svc/ConStroka" id="fb55a5d9-a251-4e86-9dfb-7cd1a08842d3" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="fb55a5d9-a251-4e86-9dfb-7cd1a08842d3fileName">%2FWCFREST%2FService.svc%2FConStroka</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="871d8009-ae86-40d0-922d-ac9d643a9fcd" httpResponseStatus="200" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070" mediaType="application/json" encoding="utf-8" dataSource="">
+    <con:settings/>
+    <con:responseContent>"Test String"</con:responseContent>
+    <con:header>
+      <con:name>Cache-Control</con:name>
+      <con:value>private</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Server</con:name>
+      <con:value>Microsoft-IIS/7.5</con:value>
+    </con:header>
+    <con:header>
+      <con:name>X-AspNet-Version</con:name>
+      <con:value>4.0.30319</con:value>
+    </con:header>
+    <con:header>
+      <con:name>Date</con:name>
+      <con:value>Tue, 17 Dec 2019 12:13:59 GMT</con:value>
+    </con:header>
+    <con:header>
+      <con:name>X-Powered-By</con:name>
+      <con:value>ASP.NET</con:value>
+    </con:header>
+  </con:response>
+</con:restMockAction>

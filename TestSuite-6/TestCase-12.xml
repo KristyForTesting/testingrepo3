@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="b8c62d42-f982-4a76-99f8-ad745ddc1c85" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 12" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b8c62d42-f982-4a76-99f8-ad745ddc1c85fileName">TestCase-12</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="MQTTDropConnectionTestStep" name="Drop MQTT Connection" id="c8b84e1f-6d10-44e1-8db8-49e0fa8c1e5a">
+    <con:settings/>
+    <con:config>
+      <LegacyConnection>false</LegacyConnection>
+      <ConnectionName>mosquitto.org</ConnectionName>
+      <Timeout>30000</Timeout>
+      <TimeoutMeasure>Seconds</TimeoutMeasure>
+      <DropMethod>Drop</DropMethod>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

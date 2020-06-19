@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="c4847226-c0de-42ad-8f16-ccd1e584ee8a" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="c4847226-c0de-42ad-8f16-ccd1e584ee8afileName">TestCase-1</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="graphqltestrequest" name="GraphQL Request" id="c3487ed6-c6e8-4c66-81ff-6ed2fa5da0c2">
+    <con:settings/>
+    <con:config xsi:type="con:GraphQLTestRequest" id="89c4241e-2206-44f1-bc0d-0df0a51ab493" name="GraphQL Request" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://rapis02.aqa.com.ru:4000/graphql</con:endpoint>
+      <con:request>{"query":"mutation {\n  addCustomer(name: \"string\", email: \"string\", age: 0) {\n    id\n    name\n    email\n    age\n    status\n    products {\n      productID\n      productName\n      quantity\n      info {\n        made\n        disign\n        warranty\n        AnnualFailureRate\n      }\n    }\n    data {\n      LicenseType\n      Status\n    }\n  }\n}","operationName":null,"variables":null}</con:request>
+      <con:credentials>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

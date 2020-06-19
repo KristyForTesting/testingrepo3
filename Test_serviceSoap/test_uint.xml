@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="43fe3a25-02c9-43b1-8eb5-136b0a1e7679" isOneWay="false" action="http://localhost/test_service/Service1.asmx/test_uint" name="test_uint" bindingOperationName="test_uint" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="43fe3a25-02c9-43b1-8eb5-136b0a1e7679fileName">test_uint</con:setting>
+  </con:settings>
+  <con:call id="53145eeb-90b7-4660-968a-4fc4af70875d" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:test_uint/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/test_uint"/>
+  </con:call>
+</con:operation>

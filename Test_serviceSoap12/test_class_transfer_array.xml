@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="8bef1e45-4992-460c-9209-f3d2a11550d3" isOneWay="false" action="http://localhost/test_service/Service1.asmx/test_class_transfer_array" name="test_class_transfer_array" bindingOperationName="test_class_transfer_array" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="8bef1e45-4992-460c-9209-f3d2a11550d3fileName">test_class_transfer_array</con:setting>
+  </con:settings>
+  <con:call id="d80f695c-fca1-4732-8424-4bed1a6f55bc" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:test_class_transfer_array>\r
+         <!--Optional:-->\r
+         <ser:x>\r
+            <!--Zero or more repetitions:-->\r
+            <ser:int>?</ser:int>\r
+         </ser:x>\r
+      </ser:test_class_transfer_array>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_class_transfer_arrayRequest"/>
+  </con:call>
+</con:operation>

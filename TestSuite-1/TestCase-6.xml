@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="9c0c0bb4-1376-4b57-94ab-f4baec0d5322" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 6" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="9c0c0bb4-1376-4b57-94ab-f4baec0d5322fileName">TestCase-6</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="JMS" name="JMS Request" id="bd78185d-1b8e-4ac2-8a81-81ac028d8a18">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap</con:interface>
+      <con:operation>Con_Stroka</con:operation>
+      <con:request name="JMS Request" id="17cdeda3-a740-431e-8430-5a79773e3c32">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>readyjms://ActiveMQ::Q1::Q2</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:Con_Stroka/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+        <con:assertion type="SOAP Response" id="037ee4ac-96c1-43fe-9654-a9c5d6dc820e"/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

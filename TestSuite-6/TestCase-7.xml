@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="16a02325-3a78-4416-b2e3-84c474abfec9" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 7" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="16a02325-3a78-4416-b2e3-84c474abfec9fileName">TestCase-7</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="propertyWaitTestStep" name="Property Wait" id="bb232ea5-1361-427e-8936-ef55147eab20">
+    <con:settings/>
+    <con:config>
+      <scope>Current Project Properties</scope>
+      <projectName>composite-project-rapi-280</projectName>
+      <testSuiteName/>
+      <mockServiceName/>
+      <mockOperationName/>
+      <mockResponseName/>
+      <propertyName>Prop</propertyName>
+      <compareMethodName>Equals (==)</compareMethodName>
+      <valueToCompare>Test</valueToCompare>
+      <timeout>10</timeout>
+      <timeoutMeasureName>seconds</timeoutMeasureName>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="12c7f57c-e57d-4be0-83e2-2db17baac299" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 2" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="12c7f57c-e57d-4be0-83e2-2db17baac299fileName">TestCase-2</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="restmockresponse" name="REST VirtResponse" id="6ebb9269-0244-4087-b249-0da6d3768e3a">
+    <con:settings/>
+    <con:config xsi:type="con:RESTMockResponseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Service 1</con:interface>
+      <con:path>/WCFREST/Service.svc/Vse</con:path>
+      <con:method>GET</con:method>
+      <con:port>8080</con:port>
+      <con:response mediaType="application/xml" httpResponseStatus="200">
+        <con:responseContent>Test</con:responseContent>
+      </con:response>
+      <con:host>localhost</con:host>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

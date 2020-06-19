@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="e99577bf-9fd8-4c9c-ae5b-a1ae8872b6a1" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e99577bf-9fd8-4c9c-ae5b-a1ae8872b6a1fileName">TestCase-1</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="mockresponse" name="SOAP VirtResponse" id="0e5ada8a-26fa-4570-be35-abad2b18ad5b">
+    <con:settings/>
+    <con:config xsi:type="con:MockResponseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap</con:interface>
+      <con:operation>Con_Stroka</con:operation>
+      <con:path>/</con:path>
+      <con:port>8080</con:port>
+      <con:response id="b4f17088-de15-4d92-8c5f-271099b5df76" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070">
+        <con:settings/>
+        <con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:Con_StrokaResponse>
+         <!--Optional:-->
+         <ser:Con_StrokaResult>Test</ser:Con_StrokaResult>
+      </ser:Con_StrokaResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent>
+        <con:wsaConfig mustUnderstand="NONE" version="200508"/>
+      </con:response>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

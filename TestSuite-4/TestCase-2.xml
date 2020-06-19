@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="50530259-52f1-4056-95b4-abbba1925ba1" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 2" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="50530259-52f1-4056-95b4-abbba1925ba1fileName">TestCase-2</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="calltestcase" name="Run TestCase" id="4bf65c51-eba2-4a6b-b99c-6757d0e3899a">
+    <con:settings/>
+    <con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:targetTestCase>1a61993c-24cf-4e57-9009-48f5c63b38ad</con:targetTestCase>
+      <con:properties/>
+      <con:returnProperties/>
+      <con:runMode>PARALLELL</con:runMode>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

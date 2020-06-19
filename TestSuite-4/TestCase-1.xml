@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="cbf65c18-7555-4de6-9bde-c30353472ac6" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="cbf65c18-7555-4de6-9bde-c30353472ac6fileName">TestCase-1</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="goto" name="Conditional Goto" id="93c93aaa-3f72-4631-91fe-c8831eaac598">
+    <con:settings/>
+    <con:config xsi:type="con:GotoStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:condition>
+        <con:name>Condition 1</con:name>
+        <con:type>XPATH</con:type>
+        <con:expression>true</con:expression>
+      </con:condition>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

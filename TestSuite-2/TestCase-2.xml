@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="24925496-d647-4377-8fba-eb160c846d3f" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 2" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="24925496-d647-4377-8fba-eb160c846d3ffileName">TestCase-2</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="XmlRpcTestStep" name="XML-RPC" id="ebc26bb8-5625-47aa-8126-a92202f6da04">
+    <con:settings/>
+    <con:config xsi:type="con:XmlRpcStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:service>Xmlrpcapi.rem</con:service>
+      <con:operation>XmlRpc.TestString</con:operation>
+      <con:requestContent><![CDATA[<methodCall>
+<methodName>XmlRpc.TestString</methodName>
+<params>
+<param><value><string>TestString</string></value></param>
+</params>
+</methodCall>]]></con:requestContent>
+      <con:request id="1356a3fa-6d75-44b1-b918-5e36948b3393" name="XML-RPC">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/xmlrpc/xmlrpcapi.rem</con:endpoint>
+        <con:request/>
+        <con:credentials>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+      </con:request>
+      <con:parameter>string</con:parameter>
+      <con:resultParameter>string</con:resultParameter>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

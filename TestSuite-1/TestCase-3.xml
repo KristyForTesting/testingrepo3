@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="8ebcb8b3-e9f9-448e-90a5-e46484f6833f" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 3" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="8ebcb8b3-e9f9-448e-90a5-e46484f6833ffileName">TestCase-3</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="httprequest" name="HTTP Request" id="efb0c44e-635c-444a-8093-02b4f7c1b5e2">
+    <con:settings/>
+    <con:config method="GET" xsi:type="con:HttpRequest" id="96e397c7-6308-4408-967b-302d4b776f56" name="HTTP Request" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:settings/>
+      <con:endpoint>http://rapis02.aqa.com.ru/WCFREST/Service.svc/Stroka</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>x</con:name>
+          <con:value>Test</con:value>
+          <con:style>QUERY</con:style>
+          <con:default>Test</con:default>
+          <con:path xsi:nil="true"/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+      </con:parameters>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

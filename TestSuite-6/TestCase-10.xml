@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="36bac4a9-e734-43a7-b69a-5d5e1cf60545" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 10" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="36bac4a9-e734-43a7-b69a-5d5e1cf60545fileName">TestCase-10</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="MQTTReceiveTestStep" name="Receive MQTT Message" id="ef4cada8-efcf-41ee-b21a-69ce24dc4d6d">
+    <con:settings/>
+    <con:config>
+      <LegacyConnection>false</LegacyConnection>
+      <ConnectionName>mosquitto.org</ConnectionName>
+      <Timeout>30000</Timeout>
+      <TimeoutMeasure>Seconds</TimeoutMeasure>
+      <ListenedTopics>Test</ListenedTopics>
+      <QoS>0</QoS>
+      <ExpectedMessageType>Utf8Text</ExpectedMessageType>
+      <OnUnexpectedTopic>Ignore</OnUnexpectedTopic>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="" path="inheritanceClass" id="baf0b202-eb62-4aeb-96db-e265771a8b5d" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="baf0b202-eb62-4aeb-96db-e265771a8b5dfileName">inheritanceClass</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="" id="0c93d81d-e714-4b5c-9f4f-68465a062449" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="244657b0-41c2-4073-90f2-91faf4cd5b71" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://rapis02.aqa.com.ru</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

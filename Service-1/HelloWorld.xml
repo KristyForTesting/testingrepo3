@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="" path="HelloWorld" id="864c02e6-3d47-4b58-b186-eb389231a0cf" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="864c02e6-3d47-4b58-b186-eb389231a0cffileName">HelloWorld</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="" id="60c76bf5-8600-4115-9dac-b30bda858857" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="efc5fa34-67e1-4c0f-a2e6-2f3a91afc5f1" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://rapis02.aqa.com.ru</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

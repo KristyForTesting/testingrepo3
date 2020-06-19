@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="" path="testByte" id="6e85ad60-8dc1-423f-aa48-93ee5d3a656c" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="6e85ad60-8dc1-423f-aa48-93ee5d3a656cfileName">testByte</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="" id="4c0cc356-f422-45fd-ab7d-ae515786a8dc" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>t</con:name>
+        <con:value xsi:nil="true"/>
+        <con:style>QUERY</con:style>
+        <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:integer</con:type>
+        <con:default xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Request 1" id="9b625302-9dac-4144-8dc4-df1f91549830" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://rapis02.aqa.com.ru</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

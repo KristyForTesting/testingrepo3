@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="" path="GetAllRecords" id="e5e90890-5374-4658-8baf-4c43a6eb9cf3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e5e90890-5374-4658-8baf-4c43a6eb9cf3fileName">GetAllRecords</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="" id="46e5e07d-936c-42da-830a-fc5dc03a738b" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="00ef3a02-3222-45fe-aec9-235e7effe7fb" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://rapis02.aqa.com.ru</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="" path="delayResponse" id="b83b9bdb-fd96-4038-bc1e-df679a7e8bbc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b83b9bdb-fd96-4038-bc1e-df679a7e8bbcfileName">delayResponse</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="" id="906d43d1-07e9-432e-a54b-d5fa90b68a08" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>t</con:name>
+        <con:value xsi:nil="true"/>
+        <con:style>QUERY</con:style>
+        <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:integer</con:type>
+        <con:default xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Request 1" id="7af80ed7-956a-43e9-8927-7089667aa156" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://rapis02.aqa.com.ru</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

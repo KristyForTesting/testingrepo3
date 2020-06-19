@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="" path="InputDate" id="c5dd131f-64c1-4f9d-b3e2-70ebb87e9588" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="c5dd131f-64c1-4f9d-b3e2-70ebb87e9588fileName">InputDate</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="" id="82d46504-e26d-4438-838c-9426c3608f80" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>d</con:name>
+        <con:value xsi:nil="true"/>
+        <con:style>QUERY</con:style>
+        <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:dateTime</con:type>
+        <con:default xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Request 1" id="08791891-1036-4d93-bb71-324cd5a33b96" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://rapis02.aqa.com.ru</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

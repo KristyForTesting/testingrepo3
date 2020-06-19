@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="1743682e-8479-4ab8-a20c-a91cf2fbf352" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 6" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="1743682e-8479-4ab8-a20c-a91cf2fbf352fileName">TestCase-6</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="fileWaitTestStep" name="File Wait" id="71af578c-b2c6-43eb-b8ab-980e4a4d9672">
+    <con:settings/>
+    <con:config>
+      <FileName>${projectDir}\Test.txt</FileName>
+      <Timeout>12</Timeout>
+      <timeout_measure>0</timeout_measure>
+      <DeleteFile>false</DeleteFile>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="0ef0911b-715b-4102-b5c4-bfd5c4c6926d" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 4" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="0ef0911b-715b-4102-b5c4-bfd5c4c6926dfileName">TestCase-4</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="amfrequest" name="AMF Request" id="52c93c52-ab1a-4c34-8dce-21f3ca38e6d8">
+    <con:settings/>
+    <con:config xsi:type="con:AMFRequestTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:properties>
+        <con:property>
+          <con:name>body</con:name>
+          <con:value>3.4</con:value>
+        </con:property>
+      </con:properties>
+      <con:endpoint>http://rapis01.aqa.com.ru:8400/RegTest/messagebroker/amf</con:endpoint>
+      <con:amfCall>RegTestServiceDestination.getNumber</con:amfCall>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

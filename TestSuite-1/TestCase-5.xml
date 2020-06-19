@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="e7300ef7-f32e-4165-b004-1b1f3158ff1c" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 5" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e7300ef7-f32e-4165-b004-1b1f3158ff1cfileName">TestCase-5</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="jdbc" name="JDBC Request" id="4b7bf164-786f-4fef-b425-dcb16ffa3b3b">
+    <con:settings>
+      <con:setting id="prettyPrintResponse">true</con:setting>
+    </con:settings>
+    <con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dbConnectionName>MSSQL</con:dbConnectionName>
+      <con:driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</con:driver>
+      <con:connectionString>jdbc:sqlserver://rapis01.aqa.com.ru:1433;databaseName=DatabaseVariable;user=DatabaseVariable;password=PASS_VALUE</con:connectionString>
+      <con:password>DatabaseVariable</con:password>
+      <con:connectionProperties/>
+      <con:query>Select table1.ID, table1.Name
+From table1</con:query>
+      <con:properties/>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

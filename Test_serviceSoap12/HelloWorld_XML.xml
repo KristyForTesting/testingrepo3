@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="bc3305fa-70d3-4b35-ad4e-3cfe2eaa4ffa" isOneWay="false" action="http://localhost/test_service/Service1.asmx/HelloWorld_XML" name="HelloWorld_XML" bindingOperationName="HelloWorld_XML" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="bc3305fa-70d3-4b35-ad4e-3cfe2eaa4ffafileName">HelloWorld_XML</con:setting>
+  </con:settings>
+  <con:call id="2e16a6a4-05c4-4ef4-91d0-6111f33cc5c0" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:HelloWorld_XML/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/HelloWorld_XMLRequest"/>
+  </con:call>
+</con:operation>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="7764c1cc-9c79-4d9b-b544-7924f9d7fe79" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 4" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="7764c1cc-9c79-4d9b-b544-7924f9d7fe79fileName">TestCase-4</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="tcintegrationteststep" name="TestComplete" id="91022b34-bfd3-407c-b4b6-61ac8019fe30">
+    <con:settings/>
+    <con:config>
+      <timeout>1234</timeout>
+      <executionResult>0</executionResult>
+      <resultDescription/>
+      <testRunner>TestComplete 14</testRunner>
+      <runMode/>
+      <exportTestLog>${projectDir}\TCLogs</exportTestLog>
+      <silentModeLog/>
+      <projectSuiteFile>D:\Jit\RAPI-auto-tests\Tests\Other\Composite_Projects\Composite_Projects.pjs</projectSuiteFile>
+      <projectName/>
+      <scriptUnit/>
+      <scriptRoutine/>
+      <silentMode>false</silentMode>
+      <showTestLog>false</showTestLog>
+      <warningAsError>false</warningAsError>
+      <test/>
+      <otherTest/>
+      <otherArgs/>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

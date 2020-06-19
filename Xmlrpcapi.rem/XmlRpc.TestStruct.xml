@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:method name="XmlRpc.TestStruct" help="         Struct       " id="ba766836-2186-4e79-8763-db01f217ba31" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="ba766836-2186-4e79-8763-db01f217ba31fileName">XmlRpc.TestStruct</con:setting>
+  </con:settings>
+  <con:call id="413316e3-064f-4781-b1dc-c6aa2fb908f5" name="Request">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/xmlrpc/xmlrpcapi.rem</con:endpoint>
+    <con:request><![CDATA[<methodCall>
+<methodName>XmlRpc.TestStruct</methodName>
+<params>
+<param><value><struct></struct></value></param>
+</params>
+</methodCall>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+  </con:call>
+  <con:resultParameter>struct</con:resultParameter>
+  <con:parameter>struct</con:parameter>
+</con:method>

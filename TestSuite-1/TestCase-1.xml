@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="1a61993c-24cf-4e57-9009-48f5c63b38ad" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="1a61993c-24cf-4e57-9009-48f5c63b38adfileName">TestCase-1</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="request" name="SOAP Request" id="8e2b779b-1a96-4342-aba2-548480302f13">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>Test_serviceSoap</con:interface>
+      <con:operation>Con_Stroka</con:operation>
+      <con:request name="SOAP Request" id="e92cd966-9e3f-4c06-8cc1-fa11bee3453b">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:Con_Stroka><ser:x>Test</ser:x><ser:y>String</ser:y></ser:Con_Stroka>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
+        <con:assertion type="SOAP Response" id="db20aa31-d063-4508-a1ba-24453c75fce0"/>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="assertionteststep" name="Assertion" id="bde48c70-eb4d-491f-9fea-5349b79bd0c9">
+    <con:settings/>
+    <con:config xsi:type="con:AssertionTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:entry>
+        <con:id>a0574acd-cb5e-406d-8a3e-cf777f207c57</con:id>
+        <con:isGroup>false</con:isGroup>
+        <con:sourceId>8e2b779b-1a96-4342-aba2-548480302f13</con:sourceId>
+        <con:propertyName>Response</con:propertyName>
+        <con:assertion type="XPath Match" name="XPath Match" id="a140abf9-d136-44ba-9be3-4494f49d298a">
+          <con:configuration>
+            <path>declare namespace ns1='http://localhost/test_service/Service1.asmx';
+//ns1:Con_StrokaResponse[1]/ns1:Con_StrokaResult[1]</path>
+            <content>Test String</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+      </con:entry>
+      <con:entry>
+        <con:id>7948c210-bdb7-4927-8e65-ba7775fed352</con:id>
+        <con:isGroup>false</con:isGroup>
+        <con:sourceId>8e2b779b-1a96-4342-aba2-548480302f13</con:sourceId>
+        <con:propertyName>Response</con:propertyName>
+        <con:assertion type="MessageContentAssertion" name="Message Content Assertion" id="37bac860-9414-4d26-988f-cf0c0b8423e0">
+          <con:configuration xsi:type="con:MessageContentAssertion">
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://localhost/test_service/Service1.asmx';
+//ns1:Con_StrokaResponse[1]/ns1:Con_StrokaResult[1]</con:xpath>
+              <con:element>Con_StrokaResult</con:element>
+              <con:type>XmlString</con:type>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>Test String</con:expectedValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:originalMessage><![CDATA[<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <Con_StrokaResponse xmlns="http://localhost/test_service/Service1.asmx">
+         <Con_StrokaResult>Test String</Con_StrokaResult>
+      </Con_StrokaResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:originalMessage>
+          </con:configuration>
+        </con:assertion>
+      </con:entry>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

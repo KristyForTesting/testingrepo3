@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="e32af4ec-a0f7-4896-98c8-0f7f91992f87" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 3" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e32af4ec-a0f7-4896-98c8-0f7f91992f87fileName">TestCase-3</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="properties" name="Properties" id="413df567-34e8-42a9-8ed2-6e6208ae5e89">
+    <con:settings/>
+    <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:properties>
+        <con:property>
+          <con:name>Prop1</con:name>
+          <con:value>Value1</con:value>
+        </con:property>
+        <con:property>
+          <con:name>Prop2</con:name>
+          <con:value>Value2</con:value>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="transfer" name="Property Transfer" id="5eba46bf-dd6d-4e1d-8294-fea11895245c">
+    <con:settings/>
+    <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+        <con:name>Transf1</con:name>
+        <con:sourceType>Prop1</con:sourceType>
+        <con:sourceStep>Properties</con:sourceStep>
+        <con:sourcePath/>
+        <con:targetType>Prop2</con:targetType>
+        <con:targetStep>Properties</con:targetStep>
+        <con:targetPath/>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

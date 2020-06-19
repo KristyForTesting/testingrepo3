@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="0386408e-c7fc-454d-9e2e-13bba35ec7a7" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 2" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="0386408e-c7fc-454d-9e2e-13bba35ec7a7fileName">TestCase-2</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="datasink" name="DataSink" id="016d440a-b626-479d-bc86-3428ee778565">
+    <con:settings/>
+    <con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSink type="Property">
+        <con:configuration>
+          <prefix>Prefix</prefix>
+          <content>Content</content>
+          <suffix>Sufix</suffix>
+          <property/>
+        </con:configuration>
+      </con:dataSink>
+      <con:properties>
+        <con:property>
+          <con:name>Prop</con:name>
+          <con:value/>
+        </con:property>
+        <con:property>
+          <con:name/>
+          <con:value/>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

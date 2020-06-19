@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="63e95181-3a11-4fad-a174-3a460ef938a9" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 5" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="63e95181-3a11-4fad-a174-3a460ef938a9fileName">TestCase-5</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="sendmailteststep" name="Send Mail" id="140e099a-7ba9-463a-a55f-0fa5589506d9">
+    <con:settings/>
+    <con:config>
+      <subject>Test</subject>
+      <message>Test</message>
+      <server>Test</server>
+      <port>25</port>
+      <login>Test</login>
+      <password>Test</password>
+      <mailTo>Test</mailTo>
+      <mailFrom>Test</mailFrom>
+      <timeout>0</timeout>
+      <timeout_measure>0</timeout_measure>
+      <StartTLSEnabled>false</StartTLSEnabled>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

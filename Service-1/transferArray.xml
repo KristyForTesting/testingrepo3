@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="" path="transferArray" id="0e8d258e-0c0e-44c4-89a4-ccd0d6e2b60c" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="0e8d258e-0c0e-44c4-89a4-ccd0d6e2b60cfileName">transferArray</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="" id="109f57df-49d2-4773-9b38-0219af46cf2b" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="46e8fccb-2946-417f-bdad-84ce8e12aee3" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://rapis02.aqa.com.ru</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

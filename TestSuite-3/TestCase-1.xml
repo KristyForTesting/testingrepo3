@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="db02bdb6-504d-46ce-bf0f-827f2227ea23" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="db02bdb6-504d-46ce-bf0f-827f2227ea23fileName">TestCase-1</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="datasource" name="DataSource" id="6237344a-0935-4266-88cc-781ec6aee839">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Data Generator">
+        <con:configuration>
+          <generatedDataCount>10</generatedDataCount>
+          <generatorsTotalNumber>1</generatorsTotalNumber>
+          <lastSelectedProperty>0</lastSelectedProperty>
+          <GeneratorType0>BOOL</GeneratorType0>
+          <PropertyName0>Prop</PropertyName0>
+          <repetitionCountProp>0</repetitionCountProp>
+          <repeatValuesProp>false</repeatValuesProp>
+          <boolViewProp>Classic</boolViewProp>
+          <escapeSpaceSequence/>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>Prop</con:property>
+      <con:completeLastOperation>true</con:completeLastOperation>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="DataSource Loop" id="13f7ff14-dbf2-4860-ad6d-857acee6b372">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>DataSource</dataSourceStep>
+      <targetStep>DataSource</targetStep>
+      <discardResults>true</discardResults>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

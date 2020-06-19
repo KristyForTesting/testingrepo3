@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="1eb78253-fc09-4858-8b9b-73665a910544" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 9" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="1eb78253-fc09-4858-8b9b-73665a910544fileName">TestCase-9</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="ftp" name="FTP" id="7c48719d-ed88-4cd7-8d38-2b1461dbaea0">
+    <con:settings/>
+    <con:config xsi:type="con:FTPTestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:host>Test</con:host>
+      <con:user>Test</con:user>
+      <con:password>Test</con:password>
+      <con:transaction>
+        <con:fileName>Test</con:fileName>
+        <con:localPath>Test</con:localPath>
+        <con:serverPath>Test</con:serverPath>
+      </con:transaction>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>
