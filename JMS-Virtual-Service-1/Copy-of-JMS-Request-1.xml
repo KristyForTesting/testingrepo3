@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:customOperation id="35d5114d-d919-4dc0-a948-f6915c55a64f" name="JMS Request 1" xmlns:con="http://eviware.com/soapui/config">
+<con:customOperation id="78cf9e57-547b-4146-93e9-19683f299902" name="Copy of JMS Request 1" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="35d5114d-d919-4dc0-a948-f6915c55a64ffileName">JMS-Request-1</con:setting>
+    <con:setting id="78cf9e57-547b-4146-93e9-19683f299902fileName">Copy-of-JMS-Request-1</con:setting>
   </con:settings>
   <con:defaultResponse>Response 1</con:defaultResponse>
   <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
   <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
   <con:operationProperties>
     <con:property>
       <con:name>JmsServer</con:name>
@@ -44,7 +47,7 @@
       <con:value/>
     </con:property>
   </con:operationProperties>
-  <con:customResponse name="Response 1" id="2eed75a8-0755-424d-ae9e-8bafafb42cc4">
+  <con:customResponse name="Response 1" id="88f38ae0-bfb7-459e-89d5-b36a8b439870">
     <con:settings/>
     <con:script/>
     <con:responseProperties>
@@ -59,7 +62,7 @@
       <con:property>
         <con:name>BindableJmsMockResponse.manualDestination</con:name>
         <con:value>#ManualJmsConfiguration properties
-#Fri Jun 19 12:38:57 MSK 2020
+
 receiveDestinationJndiName=Q1
 password=
 initialContextFactoryClass=org.apache.activemq.jndi.ActiveMQInitialContextFactory

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:customOperation id="7ed2825b-12dd-4155-bb03-9e650e3e600c" name="Copy of Request 1" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="7ed2825b-12dd-4155-bb03-9e650e3e600cfileName">Copy-of-Request-1</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:routeScript/>
+  <con:operationProperties/>
+</con:customOperation>

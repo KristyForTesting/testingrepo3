@@ -165,5 +165,7 @@ Load-Test-1.xml
 SOAP-Virtual-Service-1\Con_Stroka.xml
 REST-Virtual-Service-1\%2FWCFREST%2FService.svc%2FConStroka.xml
 JMS-Virtual-Service-1\JMS-Request-1.xml
+JMS-Virtual-Service-1\Copy-of-JMS-Request-1.xml
 JDBC-Virtual-Service-1\Select-table1.ID%2C-table1.Name-From-table1.xml
 TCP-Virtual-Service-1\Request-1.xml
+TCP-Virtual-Service-1\Copy-of-Request-1.xml

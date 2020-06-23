@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:customOperation id="35d5114d-d919-4dc0-a948-f6915c55a64f" name="JMS Request 1" xmlns:con="http://eviware.com/soapui/config">
+<con:customOperation id="99be1c7f-345f-4c15-aab5-6e144ab54cb5" name="123" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="35d5114d-d919-4dc0-a948-f6915c55a64ffileName">JMS-Request-1</con:setting>
+    <con:setting id="99be1c7f-345f-4c15-aab5-6e144ab54cb5fileName">123</con:setting>
   </con:settings>
   <con:defaultResponse>Response 1</con:defaultResponse>
   <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
   <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
   <con:operationProperties>
     <con:property>
       <con:name>JmsServer</con:name>
@@ -44,7 +47,7 @@
       <con:value/>
     </con:property>
   </con:operationProperties>
-  <con:customResponse name="Response 1" id="2eed75a8-0755-424d-ae9e-8bafafb42cc4">
+  <con:customResponse name="Response 1" id="fab73f0e-3cb9-43c6-813e-105cf3c05e01">
     <con:settings/>
     <con:script/>
     <con:responseProperties>

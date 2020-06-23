@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:customOperation id="18a0d604-9aaf-4da2-9fce-0026d6305076" name="Request 1" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="18a0d604-9aaf-4da2-9fce-0026d6305076fileName">Request-1</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:routeScript/>
+  <con:operationProperties/>
+</con:customOperation>

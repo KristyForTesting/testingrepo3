@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="847be2b2-dad2-44d1-8e2a-c2ba8fa2239b" created="3.3.0-SNAPSHOT" activeEnvironment="Default environment" name="Project 1" resourceRoot="" updated="3.3.0-SNAPSHOT 2020-06-17T07:59:56Z" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:mockService id="ef272da6-430e-4eb5-a704-7190ed8a200a" port="8080" path="/" host="localhost" name="SOAP Virtual Service 1">
+    <con:settings>
+      <con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting>
+    </con:settings>
+    <con:properties/>
+    <con:constraints>
+      <con:congestion>0</con:congestion>
+      <con:inputBandwidth>-1</con:inputBandwidth>
+      <con:outputBandwidth>-1</con:outputBandwidth>
+      <con:maxThreadPoolCapacity>20</con:maxThreadPoolCapacity>
+      <con:coreThreadPoolCapacity>5</con:coreThreadPoolCapacity>
+      <con:virtError>
+        <con:start>0</con:start>
+        <con:endless>true</con:endless>
+      </con:virtError>
+    </con:constraints>
+    <con:dataSources/>
+    <con:headerValidator type="NONE"/>
+  </con:mockService>
+  <con:restMockService id="52771dfa-5947-45ed-8c07-05d9dd483f80" port="8080" path="/" host="localhost" name="REST Virtual Service 1">
+    <con:settings/>
+    <con:properties/>
+    <con:constraints>
+      <con:congestion>0</con:congestion>
+      <con:inputBandwidth>-1</con:inputBandwidth>
+      <con:outputBandwidth>-1</con:outputBandwidth>
+      <con:maxThreadPoolCapacity>20</con:maxThreadPoolCapacity>
+      <con:coreThreadPoolCapacity>5</con:coreThreadPoolCapacity>
+      <con:virtError>
+        <con:start>0</con:start>
+        <con:endless>true</con:endless>
+      </con:virtError>
+    </con:constraints>
+    <con:headerValidator type="NONE"/>
+  </con:restMockService>
+  <con:customMockService id="46fb4fa3-8381-4d22-bb5c-1c1863a0b465" name="JMS Virtual Service 1">
+    <con:settings/>
+    <con:properties>
+      <con:property>
+        <con:name>jmsMockService.ttlHopLimit</con:name>
+        <con:value>10</con:value>
+      </con:property>
+    </con:properties>
+    <con:constraints>
+      <con:congestion>0</con:congestion>
+      <con:inputBandwidth>-1</con:inputBandwidth>
+      <con:outputBandwidth>-1</con:outputBandwidth>
+      <con:maxThreadPoolCapacity>1</con:maxThreadPoolCapacity>
+      <con:coreThreadPoolCapacity>1</con:coreThreadPoolCapacity>
+      <con:virtError>
+        <con:start>0</con:start>
+        <con:endless>true</con:endless>
+      </con:virtError>
+    </con:constraints>
+    <con:virtProperties>
+      <con:property>
+        <con:name>mockServiceType</con:name>
+        <con:value>JMS</con:value>
+      </con:property>
+    </con:virtProperties>
+  </con:customMockService>
+  <con:customMockService id="33c40c69-8a6c-4952-bc85-7deda011707a" name="JDBC Virtual Service 1">
+    <con:settings/>
+    <con:properties>
+      <con:property>
+        <con:name>jdbcMockService.port</con:name>
+        <con:value>10080</con:value>
+      </con:property>
+    </con:properties>
+    <con:constraints>
+      <con:congestion>0</con:congestion>
+      <con:inputBandwidth>-1</con:inputBandwidth>
+      <con:outputBandwidth>-1</con:outputBandwidth>
+      <con:maxThreadPoolCapacity>20</con:maxThreadPoolCapacity>
+      <con:coreThreadPoolCapacity>5</con:coreThreadPoolCapacity>
+      <con:virtError>
+        <con:start>0</con:start>
+        <con:endless>true</con:endless>
+      </con:virtError>
+    </con:constraints>
+    <con:virtProperties>
+      <con:property>
+        <con:name>mockServiceType</con:name>
+        <con:value>JDBC</con:value>
+      </con:property>
+    </con:virtProperties>
+  </con:customMockService>
+  <con:customMockService id="5ce03c59-d5ab-4994-a73f-e2b8c59b7ed1" name="TCP Virtual Service 1">
+    <con:settings/>
+    <con:properties>
+      <con:property>
+        <con:name>tcpMockService.port</con:name>
+        <con:value>9897</con:value>
+      </con:property>
+      <con:property>
+        <con:name>tcpMockService.requestDelimiterType</con:name>
+        <con:value>Segment Forwarding</con:value>
+      </con:property>
+      <con:property>
+        <con:name>tcpMockService.requestDelimiterParams</con:name>
+        <con:value/>
+      </con:property>
+      <con:property>
+        <con:name>tcpMockService.responseDelimiterType</con:name>
+        <con:value>Segment Forwarding</con:value>
+      </con:property>
+      <con:property>
+        <con:name>tcpMockService.responseDelimiterParams</con:name>
+        <con:value/>
+      </con:property>
+    </con:properties>
+    <con:constraints>
+      <con:congestion>0</con:congestion>
+      <con:inputBandwidth>-1</con:inputBandwidth>
+      <con:outputBandwidth>-1</con:outputBandwidth>
+      <con:maxThreadPoolCapacity>20</con:maxThreadPoolCapacity>
+      <con:coreThreadPoolCapacity>5</con:coreThreadPoolCapacity>
+      <con:virtError>
+        <con:start>0</con:start>
+        <con:endless>true</con:endless>
+      </con:virtError>
+    </con:constraints>
+    <con:customOperation id="0b0f045b-908b-4b0d-906b-f2e5c685e444" name="Request 1">
+      <con:settings/>
+      <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+      <con:dispatchConfig/>
+      <con:routeScript/>
+      <con:operationProperties/>
+      <con:customResponse name="Response 1" id="4ee25a4b-1b5e-4179-a12a-af3a7cc2b496">
+        <con:settings/>
+        <con:script/>
+        <con:responseProperties/>
+      </con:customResponse>
+    </con:customOperation>
+    <con:customOperation id="e96c7248-2fb3-4fed-aa64-1f0e72aa0766" name="Copy of Request 1">
+      <con:settings/>
+      <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+      <con:dispatchConfig/>
+      <con:routeScript/>
+      <con:operationProperties/>
+    </con:customOperation>
+    <con:virtProperties>
+      <con:property>
+        <con:name>mockServiceType</con:name>
+        <con:value>TCP</con:value>
+      </con:property>
+    </con:virtProperties>
+  </con:customMockService>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting>
+    <con:xmlTemplates/>
+    <con:parameters/>
+  </con:reporting>
+  <con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest">
+    <con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
+// This code is often used for adding custom authentication to SoapUI Pro tests
+
+// If hardcoding the token, uncomment and change line 5
+// token = '4567'
+
+// If your token is parameterized in Project level custom property, uncomment line 8
+// token = request.parent.testCase.testSuite.project.getProperty('auth_token').getValue()
+
+// To modify all outgoing calls, remove comments from lines 11 to 16
+// headers = request.requestHeaders
+// if (headers.containsKey('auth_token2') == false) {
+//   headers.put('auth_token2', token)
+//   request.requestHeaders = headers
+// }</con:script>
+  </con:eventHandlers>
+  <con:eventHandlers type="TestRunListener.afterStep" name="TestRunListener.afterStep">
+    <con:script>// Save all test step results into files
+// Change the directory path in line 5 to a location where you want to store details
+// then uncomment lines 5 to 10
+
+// filePath = 'C:\\tempOutputDirectory\\'
+// fos = new java.io.FileOutputStream(filePath + testStepResult.testStep.label + '.txt', true)
+// pw = new java.io.PrintWriter(fos)
+// testStepResult.writeTo(pw)
+// pw.close()
+// fos.close()</con:script>
+  </con:eventHandlers>
+  <con:authRepository/>
+  <con:tags/>
+</con:soapui-project>
